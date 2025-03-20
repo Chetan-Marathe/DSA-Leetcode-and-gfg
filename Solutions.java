@@ -39,3 +39,17 @@
 //         return false;
 //     }
 // }
+
+//leetcode 1290
+// class Solution {
+//     public int getDecimalValue(ListNode head) {
+//         int result = 0;
+//         ListNode ptr = head;
+//         while (ptr != null) {
+//             result = result * 2 + ptr.val;  
+//             ptr = ptr.next;
+//         }
+//         return result;
+
+//     }
+// }
