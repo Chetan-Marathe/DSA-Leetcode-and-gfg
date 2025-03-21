@@ -53,3 +53,46 @@
 
 //     }
 // }
+
+// //Leetcode 160
+// public class Solution {
+//     public int size(ListNode head){
+//          int count = 0;
+//          ListNode ptr = head;
+//          while(ptr!=null){
+//             count++;
+//             ptr=ptr.next;
+//          }
+//          return count;
+//        }
+//     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+//         if(headA==null || headB==null){
+//         return null;
+//        }
+
+//       int size1 = size(headA);
+//       int size2 = size(headB);
+//       int size = size1-size2;
+//       ListNode ptr1 = headA;
+//       ListNode ptr2 = headB;
+
+//       if(size>0){
+//         while(size>0){
+//            ptr1=ptr1.next;
+//            size--;
+//         }
+//       }else if(size<0){
+//         while(size<0){
+//            ptr2=ptr2.next;
+//            size++;
+//         }
+//       } 
+//       while(ptr1!=ptr2){
+//         ptr1=ptr1.next;
+//         ptr2=ptr2.next;
+//       }
+
+//       return ptr1;
+        
+//     }
+// }
