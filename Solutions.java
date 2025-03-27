@@ -180,3 +180,24 @@ class Solution {
         return leftAns + rightAns + 1;
     }
 }
+
+leetcode post order traversal
+class Solution {
+    // Function to return a list containing the postorder traversal of the tree.
+    ArrayList<Integer> postOrder(Node root) {
+       ArrayList<Integer> list = new ArrayList<>();
+       helper(root,list);
+       return list;
+    }
+    
+    public void helper(Node root, ArrayList<Integer> list){
+        if(root == null){
+            return;
+        }
+        
+        helper(root.left,list);
+        helper(root.right,list);
+        
+        list.add(root.data);
+    }
+}

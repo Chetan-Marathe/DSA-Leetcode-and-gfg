@@ -44,3 +44,6 @@ public class Main{
     }
 }
 
+leetcode 22
+
+
