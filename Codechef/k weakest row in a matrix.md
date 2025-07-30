@@ -53,7 +53,7 @@ n == mat[i].length
 1 <= k <= m
 matrix[i][j] is either 0 or 1.
 
-Code:
+Codee:
 class Solution {
     public int[] kWeakestRows(int[][] mat, int k) {
         HashMap<Integer,Integer> map = new HashMap<>();
